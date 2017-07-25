@@ -1,0 +1,25 @@
+<h2>Heading level 2</h2>
+<h3>Heading level 3</h3>
+<h4>Heading level 4</h4>
+					<h5>Heading level 5</h5>
+					<h6>Heading level 6</h6>
+
+                    <p class="text-left"></p>
+					<hr>
+					<p class="text-center"></p>
+					<hr>
+                    <p class=" text-right"></p>					
+					<hr>
+                    <p class="text-justify"></p>	
+         <p><iframe class="img-responsive" src="https://www.slideshare.net/slideshow/embed_code/key/l8U4hTTsEGWIqQ" scrolling="no" allowfullscreen> </iframe></p>
+
+           	<h3>Unstyled list</h3>
+					<p>You can make the list unstyled using the <code>list-unstyled</code> class.</p>
+					<ul class="list-unstyled">
+						<li>Ut wisi enim ad minim veniam</li>
+						<li>Quis nostrud exerci tation</li>
+						<li>Lamcorper suscipit lobortis nis</li>
+						<li>Ut aliquip ex ea commodo consequat</li>
+						<li>Duis autem vel eum iriure dolor</li>
+					</ul>         
+					
