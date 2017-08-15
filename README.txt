@@ -1,33 +1,59 @@
-Phantom by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+TITLE: 
+Elate - One Page Responsive Free HTML5 template
+
+AUTHOR:
+DESIGNED & DEVELOPED by FREEHTML5.co
+
+Website: http://freehtml5.co/
+Twitter: http://twitter.com/fh5co
+Facebook: http://facebook.com/fh5co
 
 
-This is Phantom, a simple design built around a grid of large, colorful, semi-interactive
-image tiles (of which you can have as many or as few as you like). Makes use of some
-SVG and animation techniques I've been experimenting with on that other project of mine
-you may have heard about (https://carrd.co), and includes a handy generic page for whatever.
+CREDITS:
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+Bootstrap
+http://getbootstrap.com/
 
-(* = not included)
+jQuery
+http://jquery.com/
 
-AJ
-aj@lkn.io | @ajlkn
+jQuery Easing
+http://gsgd.co.uk/sandbox/jquery/easing/
 
+Modernizr
+http://modernizr.com/
 
-Credits:
+Google Fonts
+https://www.google.com/fonts/
 
-	Demo Images:
-		Unsplash (unsplash.com)
+Icomoon
+https://icomoon.io/app/
 
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
+Simple Line Icons
+https://github.com/thesabbir/simple-line-icons
 
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		Misc. Sass functions (@HugoGiraudel)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
+Respond JS
+https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
+
+animate.css
+http://daneden.me/animate
+
+jQuery Waypoint
+https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
+
+Styleswitcher for Demo
+https://github.com/camsjams/jquery-style-switcher
+
+countTo JS
+https://github.com/mhuggins/jquery-countTo
+
+Stellar Parallax
+http://markdalgleish.com/projects/stellar.js/
+
+Demo Images:
+http://pexels.com
+http://plmd.me
+
+Mafnific Popup
+http://dimsemenov.com/plugins/magnific-popup/
