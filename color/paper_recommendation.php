@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
       <meta charset="utf-8">
-      <title>書籍導讀</title>
+      <title>論文導覽</title>
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
       <!-- Favicon ================== -->
@@ -19,7 +19,7 @@
       <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
 
       <!--  Resources style ================== -->
-      <link href="css/theme-Mosqlue2.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/theme-NeonSun.css" rel="stylesheet" type="text/css" media="all"/>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -37,46 +37,20 @@
         <div id="leftSide">
           <div id="homeCenter">
             <!-- Your logo -->
-              
-  			    <img src="img/book1.png" alt="" class="main-logo" />
+  			    <img src="img/paper1.png" alt="" class="main-logo" />
 
             <div class="h-content">
               <div class="heading text-white">
-                <h1>書籍導讀</h1>
-                  <h3>Android 安全架構深究</h3>
-                  <h3>Android Security Internals</h3>
+                <h1>論文導覽</h1>
+                  <h3>概論 工具</h3>
               </div>
             </div>
-              
-            <ul class="social_icons" >
-              <li><a href="../index.html">
-                  <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-heart"></i>
-                <h6>HOME</h6></div>
-                  </a></li>
-              <li><a href="../works/works.html"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-cube"></i>
-                <h6>WORK</h6>
-              </div>
-                  </a></li>
-              <li><a href="../app_checks/app_checks.html"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-arrow-graph-up-right"></i>
-                <h6>APP CHECK</h6>
-              </div></a></li>
-                <li><a href="../index.html" data-nav-section="About"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-wand"></i>
-                <h6>ABOUT</h6>
-                </div></a></li>      
-            </ul>
 
 
-            <div id="particles-js" class="gradient">   
-              </div>
-<!--
+            <div id="particles-js" class="gradient"></div>
             <div class="count-particles">
               <span class="js-count-particles"></span>
             </div>
--->
           </div>
         </div>
 
@@ -84,60 +58,39 @@
            <div class="about">
                
                
-<h2><strong>書籍資訊</strong></h2>
+<h2><strong>概論</strong></h2>
                
 <blockquote>
   <ol>
-  <h3><li><p>
-      <a href="http://www.books.com.tw/products/CN11320647"> <strong>中文連結</strong> 
-      </a><a href="https://www.nostarch.com/androidsecurity"> <strong> 英文連結</strong> </a></h3>
-  <strong>Date of Publication:</strong> 2016-01-01 <br/> 
-  <strong>Authors:</strong>尼古拉·埃倫科夫 (Nikolay Elenkov) <br/> 
-
-  <br/> 
-  </p></li>
+  <h3><li><p><a href="http://ieeexplore.ieee.org/document/6919256/">INFORMATION SECURITY IN BIG DATA:PRIVACY AND DATA MINING</a></h3>
+  <strong>Date of Publication:</strong> 09 October 2014<br /> <strong>Authors: </strong>LEI XU, CHUNXIAO JIANG, (Member, IEEE), JIAN WANG, (Member, IEEE),JIAN YUAN, (Member, IEEE), AND YONG REN, (Member, IEEE)<br /><br/>
+  <strong>探討因Data Mining發展與普及而產生的隱私問題，研究可以幫助保護敏感信息的各種方法。</strong> <br/>   
+      <a href="https://www.slideshare.net/slideshow/embed_code/key/MOcANgmxOHLziP"><strong>PPT簡介</strong></a></p></li><br />
+    
+  <h3><li><p><a href="http://ieeexplore.ieee.org/document/6999911/">Android Security: A Survey of Issues, Malware Penetration, and Defenses</a></h3>
+  <strong>Date of Publication:</strong> 30 December 2014 <br /> <strong>Authors: </strong>Parvez Faruki, Ammar Bharmal, Vijay Laxmi, Vijay Ganmoor, Manoj Singh Gaur,Mauro Conti, Senior Member, IEEE, and Muttukrishnan Rajarajan<br /><br/>
+  <strong>簡述安卓之架構與安全議題，並探討Malware之滲透與藏匿手法。介紹多種資安相關工具，如APKtools， Androguard, TaintDroid等。</strong></p></li><br />
   </ol>
-</blockquote><br/>
-
-<h2><strong>章節導讀</strong></h2>
+</blockquote><br/>               
+               
+  
+<h2><strong>分析工具相關</strong></h2>
 
 <blockquote>
   <ol>
-  <h3><li><p>第1章 Android安全模型</h3>
-  <strong>介紹Android的體系結構與安全模型。</strong></p></li>
-  <h3><li><p>第2章 Permissions權限</h3>
-  <strong>描述Android 權限之聲明、使用與執行，</strong></p></li>
-  <h3><li><p>第3章 Package Management套件管理 </h3>
-  <strong>深入了解code signing和Android應用程序安装和管理過程的工作細節，並討論Android對加密的支持。</strong></p></li>
-  <h3><li><p>第4章 User Management用戶管理</h3>
-  <strong>介绍了Android 的多用户支持，並描述了在多用户設備上數據隔閡的實現。</strong></p></li>
-  <h3><li><p>第5章 Cryptographic Provider加密提供者</h3>
-  <strong>概述了Java 加密體系結構（Java Cryptography Architecture，JCA）框架，并介绍Android 的JCA 密碼提供者。</strong></p></li>
-  <h3><li><p>第6章 Network Security and APK 網絡安全和PKI</h3>
-  <strong>使用安全協議為安全套接字擴展層(SSL)與運輸層安全(TLS)，提供JAVA安全套接字擴展（JSSE）框架。</strong></p></li>
-  <h3><li><p>第7章 Credential Storage 憑證儲存</h3>
-  <strong>介绍了Android 的憑證儲存，并介绍提供給應用的安全存儲密鑰的API。</strong></p></li>
-
-  <h3><li><p>第8章 Online Account Management 網路帳戶管理</h3>
-  <strong>討論Android如何管理用戶的在線帳戶憑據，以及應用程序如何使用API來註冊自定義帳戶。</strong></p></li>
-  <h3><li><p>第9章 Enterprise Security 企業安全</h3>
-  <strong>介紹Android企業導向之功能，與如何使用它們來增加device 安全性。</strong></p></li>
-
-  <h3><li><p>第10章 Device Security 裝置安全</h3>
-  <strong>介紹Android如何確保操作系統完整性，並保護設備數據免遭攻擊。說明了驗證啟動（verified boot）、磁盤加密和Android 锁屏等之實現。</strong></p></li>
-  <h3><li><p>第11章 NFC and Secure Elements NFC和安全元素</h3>
-  <strong>介紹近場通信（NFC）和安全元件（SE），解釋它們如何應用到移動設備中。並展示主機的卡模擬（HCE）的應用程序。</strong></p></li>
-  <h3><li><p>第12章 SELinux</h3>
-  <strong>介紹SELinux中使用的體系結構和概念，描述對SELinux進行之修改
-以支持Android，最後將其部署於當前版本的Android中。</strong></p></li>
-<h3><li><p>第13章 System Updates and Root Access 系統更新</p></li></h3>
-  <strong>介紹用於規避Android安全模式的方法，逃避沙盒並獲取Root訪問之細節。了解Android如何引導加載程序以恢復操作系統與替換系統軟體。</strong>
-
-
-  
+  <h3><li><p><a href="https://www.internetsociety.org/doc/drebin-effective-and-explainable-detection-android-malware-your-pocket">DREBIN EFFECTIVE AND EXPLAINABLE DETECTION OF ANDROID MALWARE IN YOUR POCKET</a></h3>
+  <strong>Date of Publication:</strong> 22 Feb 2014  <br /> <strong>Authors: </strong>Daniel Arp, Michael Spreitzenbarth, Malte Hubner, Hugo Gascon, and Konrad Rieck<br /><br/>
+  <strong>DREBIN是一款可以detect malicious app的靜態分析應用程式。</strong></p></li><br />
+    
+  <h3><li><p><a href="http://ieeexplore.ieee.org/document/6234407/">DISSECTING ANDROID MALWARE: CHARACTERIZATION AND EVOLUTION</a></h3>
+  <strong>Date Added to IEEE Xplore:</strong> 09 July 2012 <br /> <strong>Authors: </strong>Yajin Zhou, Xuxian Jiang<br /><br/>
+  <strong>針對惡意app常出現的特徵作分析，了解為何惡意App如何利用特定permission或是listen特定intent的用途。</strong></p></li><br />
+          
+  <h3><li><p><a href="http://ieeexplore.ieee.org/document/6876208/"><strong>Permission Use Analysis for Vetting Undesirable Behaviors in Android Apps</strong></h3></a>
+  <strong>Date of Publication:</strong> 12 August 2014 <br /> <strong>Authors: </strong>Yuan Zhang, Min Yang, Zhemin Yang, Guofei Gu, Peng Ning, and Binyu Zang<br /><br/>
+  <strong>VetDroid為一種可分析於安卓平台上的應用程式中是否有敏感行為的分析工具。可以實現一些簡單的api誤用靜態審計，menifest配置誤用以及自訂api調用分析.（沒有資料流程分析，用於簡單審計和靜態特徵定位）</strong></p></li><br />
   </ol>
 </blockquote><br/>
-
 
 <?php
 
@@ -148,7 +101,6 @@ if (file_exists($filename)) {
 ?>
 
 <br/>
-
 
 <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=140.115.80.240&digit=style/plain/10/&reloads=1" alt="" title="" border="0"></a><br /><a href="http://" target="_blank" style="font-family: Geneva, Arial,  Microsoft JhengHei; font-size: 7px; color: #330010; text-decoration: none;"></a><h4><strong>瀏覽人數</strong></h4>
 
