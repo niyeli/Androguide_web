@@ -25,10 +25,10 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      
+
         ga('create', 'UA-104779247-1', 'auto');
         ga('send', 'pageview');
-      
+
       </script>
     </head>
     <body>
@@ -37,7 +37,7 @@
         <div id="leftSide">
           <div id="homeCenter">
             <!-- Your logo -->
-              
+
   			    <img src="img/book1.png" alt="" class="main-logo" />
 
             <div class="h-content">
@@ -47,7 +47,7 @@
                   <h3>Android Security Internals</h3>
               </div>
             </div>
-              
+
             <ul class="social_icons" >
               <li><a href="../index.html">
                   <div class="feature col-sm-3 col-xs-3">
@@ -66,11 +66,11 @@
                 <li><a href="../index.html" data-nav-section="About"><div class="feature col-sm-3 col-xs-3">
                 <i class="ion-wand"></i>
                 <h6>ABOUT</h6>
-                </div></a></li>      
+                </div></a></li>
             </ul>
 
 
-            <div id="particles-js" class="gradient">   
+            <div id="particles-js" class="gradient">
               </div>
 <!--
             <div class="count-particles">
@@ -82,19 +82,19 @@
 
         <div id="rightSide">
            <div class="about">
-               
-               
+
+
 <h2><strong>書籍資訊</strong></h2>
-               
+
 <blockquote>
   <ol>
   <h3><li><p>
-      <a href="http://www.books.com.tw/products/CN11320647"> <strong>中文連結</strong> 
+      <a href="http://www.books.com.tw/products/CN11320647"> <strong>中文連結</strong>
       </a><a href="https://www.nostarch.com/androidsecurity"> <strong> 英文連結</strong> </a></h3>
-  <strong>Date of Publication:</strong> 2016-01-01 <br/> 
-  <strong>Authors:</strong>尼古拉·埃倫科夫 (Nikolay Elenkov) <br/> 
+  <strong>Date of Publication:</strong> 2016-01-01 <br/>
+  <strong>Authors:</strong> 尼古拉·埃倫科夫 (Nikolay Elenkov) <br/> 
 
-  <br/> 
+  <br/>
   </p></li>
   </ol>
 </blockquote><br/>
@@ -134,7 +134,7 @@
   <strong>介紹用於規避Android安全模式的方法，逃避沙盒並獲取Root訪問之細節。了解Android如何引導加載程序以恢復操作系統與替換系統軟體。</strong>
 
 
-  
+
   </ol>
 </blockquote><br/>
 
@@ -173,9 +173,9 @@ if (file_exists($filename)) {
                 <h6>DETECTING</h6>
               </div>
             </div>
-    
+
 </div>
-        
+
 
           <footer>
             <p class="uppercase">© Androguide - Improve your knowledge  <i class="ion-heart"></i></p>

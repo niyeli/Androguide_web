@@ -25,10 +25,10 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      
+
         ga('create', 'UA-104779247-1', 'auto');
         ga('send', 'pageview');
-      
+
       </script>
     </head>
     <body>
@@ -44,7 +44,7 @@
               <h3 class="uppercase">初學者 入門 高階</h3>
             </div>
 
-           
+
           </div>
 
         </div>
@@ -56,9 +56,9 @@
   <ol>
   <h3><li><p><a href="http://www.ithome.com.tw/">iThome</a></h3><br />
   <strong>台灣 IT 新聞網站，有豐富的資安及其他領域的資訊，裡面的“火線話題”常常會有近期病毒的報導整理哦！</strong></p></li>
-  <h3><li><p><a href="http://www.informationsecurity.com.tw/main/index.aspx"><strong>台灣的資安新聞及知識庫</strong></a></h3><br/> 
+  <h3><li><p><a href="http://www.informationsecurity.com.tw/main/index.aspx"><strong>台灣的資安新聞及知識庫</strong></a></h3><br/>
   <strong>裡面有資安知識與新聞的整理，還有免費的網路安全工具可以拿取哦！</strong></p></li>
-  <h3><li><p><a href="http://jaq.alibaba.com/community/index.htm"><strong>安全博客 - 阿里聚安全</strong></a></h3><br/> 
+  <h3><li><p><a href="http://jaq.alibaba.com/community/index.htm"><strong>安全博客 - 阿里聚安全</strong></a></h3><br/>
   <strong>阿里巴巴資安團隊所打造的網站，裡面的病毒大多和中國app或網站有很高的相關性</strong></p></li>
   </ol>
 </blockquote><br/>
@@ -88,6 +88,7 @@
   <strong>各種最新漏洞的追蹤及 PoC（美國）</strong></p></li>
   </ol><br/>
 </blockquote>
+
 <?php
 
 $filename = 'book2_recommendation.php';
@@ -124,8 +125,8 @@ if (file_exists($filename)) {
             </div>
           </div>
 
-         
-               
+
+
 
           <footer>
             <p class="uppercase">© Androguide - improve your information safety <i class="ion-heart"></i></p>

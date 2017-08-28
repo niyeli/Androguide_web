@@ -25,10 +25,10 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      
+
         ga('create', 'UA-104779247-1', 'auto');
         ga('send', 'pageview');
-      
+
       </script>
     </head>
     <body>
@@ -45,7 +45,7 @@
               <h3 class="uppercase">Android Hacker's Handbook</h3>
                   <P></P>
             </div>
-                
+
              <ul class="social_icons" >
               <li><a href="../index.html">
                   <div class="feature col-sm-3 col-xs-3">
@@ -65,28 +65,28 @@
                 <i class="ion-wand"></i>
                 <h6>ABOUT</h6>
                      </div></a></li>
-            
-                 
+
+
             </ul>
-                
-                
+
+
           </div>
-              
+
 
         </div>
 
         <div id="rightSide">
            <div class="about">
-               
+
 <h2><strong>書籍資訊</strong></h2>
-               
+
 <blockquote>
   <ol>
   <h3><li><p><a href="http://www.books.com.tw/products/0010687507"> <strong>連結</strong> </a></h3>
-  <strong>Date of Publication:</strong> 2015/09/01  <br/> 
-  <strong>Authors:</strong>  Joshua J. Drake, Pau Oliva Fora, Zach Lanier, Collin Mulliner, Stephen A.Ridley, Georg Wichersk  <br/> 
+  <strong>Date of Publication:</strong> 2015/09/01  <br/>
+  <strong>Authors:</strong>  Joshua J. Drake, Pau Oliva Fora, Zach Lanier, Collin Mulliner, Stephen A.Ridley, Georg Wichersk  <br/>
 
-  <br/> 
+  <br/>
   </p></li>
   </ol>
 </blockquote><br/>
@@ -125,7 +125,7 @@
   <strong>Android開發工具(Android SDK、Android NDK等)、原生工具(BusyBox)、靜態分析工具(Androguard、apktool等)、測試工具、硬體安全工具等之簡單介紹。</strong></p></li>
   <h3><li><p>附錄二 開放原始碼程式碼庫</h3>
   <strong>Google、SoC廠商等。</strong></p></li>
-  
+
   </ol>
 </blockquote><br/>
 
@@ -166,8 +166,8 @@ if (file_exists($filename)) {
             </div>
           </div>
 
-         
-               
+
+
 
           <footer>
             <p class="uppercase">© Androguide - improve your information safety <i class="ion-heart"></i></p>
