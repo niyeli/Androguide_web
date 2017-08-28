@@ -67,11 +67,6 @@
 							</header>
 
 
-							<h2>最近更新</h2>
-							<section class="tiles">
-
-							</section>
-							<br /><br /><hr>
 
 
 
@@ -86,12 +81,13 @@
 										<div class="content">
 											<p>學習資安的推薦網站，從初學者到高階 <br>
 												<?php
-												$filename = '../color/web_recommendation.php';
-												$fliedate = date ("<b>Y-m-d</b>", filemtime($filename));
-												if (file_exists($filename)) {
+												$filename = '網站資源';
+												$fileroute = '../color/web_recommendation.php';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
 												    echo  $fliedate;
 												}
-												$my_array = array( array($filename, $fliedate));
+												$my_array = array( array($fliedate,$filename,$fileroute ));
 												?>
 											</p>
 										</div>
@@ -107,12 +103,13 @@
 										<div class="content">
 											<p>PRIVACY AND DATA MINING(上)<br>
 												<?php
-												$filename = '../article/DataMining.html"';
-												$fliedate = date ("<b>Y-m-d</b>", filemtime($filename));
-												if (file_exists($filename)) {
+												$filename = '教學資源';
+												$fileroute = '../article/DataMining.html';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
 												    echo  $fliedate;
 												}
-												//$my_array = array( array($filename, $fliedate));
+												array_push($my_array , array($fliedate, $filename,$fileroute));
 												?></p>
 										</div>
 									</a>
@@ -127,12 +124,13 @@
 										<div class="content">
 											<p>Android Hacker's Handbook <br>
 												<?php
-												$filename = '../color/book1_recommendation.php';
-												$fliedate = date ("<b>Y-m-d</b>", filemtime($filename));
-												if (file_exists($filename)) {
+												$filename = '駭客攻防聖經';
+												$fileroute = '../color/book1_recommendation.php';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
 														echo  $fliedate;
 												}
-												$my_array = array( $my_array[0],array($filename, $fliedate));
+												array_push($my_array , array($fliedate, $filename,$fileroute));
 
 												?>
 											</p>
@@ -149,12 +147,13 @@
 										<div class="content">
 											<p> <br>
 												<?php
-												$filename = '../color/paper_recommendation.php';
-												$fliedate = date ("<b>Y-m-d</b>", filemtime($filename));
-												if (file_exists($filename)) {
+												$filename = 'Paper導覽';
+												$fileroute = '../color/paper_recommendation.php';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
 														echo $fliedate;
 												}
-												$my_array = array( $my_array[0], $my_array[1],array($filename, $fliedate));
+												array_push($my_array , array($fliedate, $filename,$fileroute));
 												?></p>
 										</div>
 									</a>
@@ -168,12 +167,13 @@
 										<div class="content">
 											<p>Androguard APKtool Taintdroid<br>
 												<?php
-												$filename = '../article/analysis_tool.html';
-												$fliedate = date ("<b>Y-m-d</b>", filemtime($filename));
-												if (file_exists($filename)) {
+												$filename = 'Android分析工具的介紹';
+												$fileroute = '../article/analysis_tool.html';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
 												    echo  $fliedate;
 												}
-												//$my_array = array( array($filename, $fliedate));
+												array_push($my_array , array($fliedate, $filename,$fileroute));
 												?></p></p>
 										</div>
 									</a>
@@ -187,12 +187,14 @@
 										<div class="content">
 											<p>Android Security Internals<br>
 												<?php
-												$filename = '../color/book2_recommendation.php';
-												$fliedate = date ("<b>Y-m-d</b>", filemtime($filename));
-												if (file_exists($filename)) {
+												$filename = 'Android 安全架構深究';
+												$fileroute = '../color/book2_recommendation.php';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
 														echo  $fliedate;
 												}
-												$my_array = array( $my_array[0], $my_array[1],$my_array[2],array($filename, $fliedate));
+												array_push($my_array , array($fliedate, $filename,$fileroute));
+												rsort($my_array);
 
 												?></p>
 										</div>
@@ -201,8 +203,10 @@
 
                                   </section>
 
+
 								<!-- <?php
-								for($Key=0;$Key<count($my_array);$Key++) {
+								//印出目前排序
+								for($Key=0;$Key<3;$Key++) {
 									 for($Key2=0;$Key2<count($my_array[$Key]);$Key2++) {
 										 echo $my_array[$Key][$Key2];
 										 echo " ";
@@ -214,6 +218,60 @@
 								?> -->
 
                             <br /><br /><hr>
+
+
+														<h2>最近更新</h2>
+														<section class="tiles">
+															<article class="style1">
+																<span class="image">
+																	<img src="images/pic01.jpg" alt="" />
+																</span>
+																<a href="<?php echo $my_array[0][2] ;?>">
+
+
+																	<h2><?php echo $my_array[0][1] ;?></h2>
+																	<div class="content">
+																		<p> <br>
+																			<?php echo $my_array[0][0] ;?></h2>
+																		</p>
+																	</div>
+																</a>
+															</article>
+
+															<article class="style2">
+																<span class="image">
+																	<img src="images/pic02.jpg" alt="" />
+																</span>
+																<a href="<?php echo $my_array[1][2] ;?>">
+
+
+																	<h2><?php echo $my_array[1][1] ;?></h2>
+																	<div class="content">
+																		<p> <br>
+																			<?php echo $my_array[1][0] ;?></h2>
+																		</p>
+																	</div>
+																</a>
+															</article>
+
+																							<article class="style3">
+																<span class="image">
+																	<img src="images/pic03.jpg" alt="" />
+																</span>
+																<a href="<?php echo $my_array[2][2] ;?>">
+
+
+																	<h2><?php echo $my_array[2][1] ;?></h2>
+																	<div class="content">
+																		<p> <br>
+																			<?php echo $my_array[2][0] ;?></h2>
+																		</p>
+																	</div>
+																</a>
+															</article>
+
+														</section>
+														<br /><br /><hr>
 
 
                              <h2>Papers</h2>
