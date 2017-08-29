@@ -68,6 +68,70 @@
 
 
 
+							<h2>最近更新</h2>
+							<section class="tiles">
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<a href="../color/book2_recommendation.php">
+										<h2>Android 安全架構深究</h2>
+										<div class="content">
+											<p>Android Security Internals<br>
+												<?php
+												$fileroute = '../color/book2_recommendation.php';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
+														echo  $fliedate;
+												}
+												?></p>
+										</div>
+									</a>
+								</article>
+
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<a href="../color/book1_recommendation.php">
+										<h2>駭客攻防聖經</h2>
+										<div class="content">
+											<p>Android Hacker's Handbook <br>
+												<?php
+												$fileroute = '../color/book1_recommendation.php';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
+														echo  $fliedate;
+												}
+												?>
+											</p>
+										</div>
+									</a>
+								</article>
+
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<a href="../color/web_recommendation.php">
+										<h2>網站資源</h2>
+										<div class="content">
+											<p>學習資安的推薦網站，從初學者到高階 <br>
+												<?php
+												$fileroute = '../color/web_recommendation.php';
+												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
+												if (file_exists($fileroute)) {
+														echo  $fliedate;
+												}
+												?>
+											</p>
+										</div>
+									</a>
+								</article>
+
+							</section>
+							<br /><br /><hr>
+
 
 
               <h2>資源推薦</h2>
@@ -202,6 +266,7 @@
 								</article>
 
                                   </section>
+																	  <br /><br /><hr>
 
 
 								<!-- <?php
@@ -217,8 +282,8 @@
 
 								?> -->
 
-                            <br /><br /><hr>
 
+<!--
 
 														<h2>最近更新</h2>
 														<section class="tiles">
@@ -271,7 +336,7 @@
 															</article>
 
 														</section>
-														<br /><br /><hr>
+														<br /><br /><hr> -->
 
 
                              <h2>Papers</h2>

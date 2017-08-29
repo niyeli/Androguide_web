@@ -92,7 +92,7 @@
       <a href="http://www.books.com.tw/products/CN11320647"> <strong>中文連結</strong>
       </a><a href="https://www.nostarch.com/androidsecurity"> <strong> 英文連結</strong> </a></h3>
   <strong>Date of Publication:</strong> 2016-01-01 <br/>
-  <strong>Authors:</strong> 尼古拉·埃倫科夫 (Nikolay Elenkov) <br/> 
+  <strong>Authors:</strong> 尼古拉·埃倫科夫 (Nikolay Elenkov) <br/>
 
   <br/>
   </p></li>

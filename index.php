@@ -296,11 +296,17 @@
 			<div class="row row-bottom-padded-sm">
 
 				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="color/paper_recommendation.php"  target="_blank" class="fh5co-project-item to-animate">
-						<img src="images/work_3.png" alt="Image" class="img-responsive">
+					<a href="color/book2_recommendation.php"  target="_blank" class="fh5co-project-item to-animate">
+						<img src="images/work_2.png" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>Android 安全架構深究</h2>
-						<span>Android Security Internals</span>
+						<h2>書籍導讀─Android 安全架構深究</h2>
+						<span><?php
+
+						$filename = 'color/book2_recommendation.php';
+						if (file_exists($filename)) {
+								echo date ("<b>F d Y</b>", filemtime($filename));
+						}
+						?></span>
 						</div>
 					</a>
 				</div>
@@ -308,8 +314,17 @@
 					<a href="color/book1_recommendation.php" target="_blank" class="fh5co-project-item to-animate">
 						<img src="images/work_2.png" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>書籍導讀</h2>
-						<span>駭客攻防聖經</span>
+						<h2>書籍導讀─駭客攻防聖經</h2>
+						<span>
+							<?php
+
+							$filename = 'color/book1_recommendation.php';
+							if (file_exists($filename)) {
+							    echo date ("<b>F d Y</b>", filemtime($filename));
+							}
+							?>
+
+						</span>
 						</div>
 					</a>
 				</div>
@@ -317,8 +332,14 @@
 					<a href="color/web_recommendation.php"  target="_blank" class="fh5co-project-item to-animate">
 						<img src="images/work_1.png" alt="" class="img-responsive">
 						<div class="fh5co-text">
-						<h2>網站推薦</h2>
-						<span>資安相關網站推薦</span>
+						<h2>資源推薦─資安相關網站推薦</h2>
+						<span><?php
+
+						$filename = 'color/web_recommendation.php';
+						if (file_exists($filename)) {
+								echo date ("<b>F d Y</b>", filemtime($filename));
+						}
+						?></span>
 						</div>
 					</a>
 
