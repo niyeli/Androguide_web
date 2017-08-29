@@ -52,7 +52,7 @@
                 <i class="ion-heart"></i>
                 <h6>HOME</h6></div>
                   </a></li>
-              <li><a href="../works/works.html"><div class="feature col-sm-3 col-xs-3">
+              <li><a href="../works/works.php"><div class="feature col-sm-3 col-xs-3">
                 <i class="ion-cube"></i>
                 <h6>WORK</h6>
               </div>
