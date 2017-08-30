@@ -53,7 +53,7 @@
 						<ul>
 							<li><a href="../index.html">Home</a></li>
 							<li><a href="#">Works</a></li>
-                            <li><a href="../app_checks/app_checks.html">App check</a></li>
+                            <li><a href="../uploadbasic/angularjs.html">App check</a></li>
 						</ul>
 					</nav>
 

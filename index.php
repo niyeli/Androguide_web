@@ -211,7 +211,7 @@
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
 		            <li><a href="work.html" data-nav-section="work"><span>Works</span></a></li>
-		            <li><a href="app_checks/app_checks.html" data-nav-section="App check"><span>App check</span></a></li>
+		            <li><a href="uploadbasic/angularjs.html" data-nav-section="App check"><span>App check</span></a></li>
                       <li><a href="#" data-nav-section="About"><span>About</span></a></li>
 
 		          </ul>
@@ -276,7 +276,7 @@
 			<div class="row watch-video text-center to-animate">
 				<span>Let's go AppChecking!</span>
 
-				<a href="app_checks/app_checks.html"><img src="images/start.PNG"></a>
+				<a href="uploadbasic/angularjs.html"><img src="images/start.PNG"></a>
 			</div>
 		</div>
 	</section>
@@ -369,7 +369,7 @@
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate">APP CHECK</h2>
-                     <a href="app_checks/app_checks.html"><h3 class=" left-border to-animate">點我前往檢測</h3></a>
+                     <a href="uploadbasic/angularjs.html"><h3 class=" left-border to-animate">點我前往檢測</h3></a>
 				</div>
 			</div>
 		</div>
