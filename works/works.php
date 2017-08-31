@@ -33,7 +33,7 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
+								<a href="index.php" class="logo">
 									<span class="symbol"><img src="images/LOGO10.png" alt="" /></span><span class="title">improve your knowledge</span>
 								</a>
 
@@ -51,7 +51,7 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="../index.html">Home</a></li>
+							<li><a href="../index.php">Home</a></li>
 							<li><a href="#">Works</a></li>
                             <li><a href="../uploadbasic/angularjs.html">App check</a></li>
 						</ul>

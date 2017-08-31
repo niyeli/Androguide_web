@@ -205,11 +205,11 @@
 		        <div class="navbar-header">
 		        	<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		         <a class="navbar-brand" href="index.html">Androguide</a>
+		         <a class="navbar-brand" href="index.php">Androguide</a>
 		        </div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="index.html" data-nav-section="home"><span>Home</span></a></li>
+		            <li class="active"><a href="index.php" data-nav-section="home"><span>Home</span></a></li>
 		            <li><a href="work.html" data-nav-section="work"><span>Works</span></a></li>
 		            <li><a href="uploadbasic/angularjs.html" data-nav-section="App check"><span>App check</span></a></li>
                       <li><a href="#" data-nav-section="About"><span>About</span></a></li>
