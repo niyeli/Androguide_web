@@ -26,6 +26,16 @@ echo "檔案大小: " . ($_FILES["file"]["size"] / 1024)." Kb<br />";
 echo "暫存名稱: " . $_FILES["file"]["tmp_name"]; 
 move_uploaded_file($_FILES['file']['tmp_name'],'upload/'.$_FILES['file']['name']);//複製檔案
 echo '<a href="upload/'.$_FILES['file']['name'].'">upload/'.$_FILES['file']['name'].'</a>';//顯示檔案路徑
+echo "<br>檢測結果：" + checkingfile("/var/www/html/app_checks/upload/'.$_FILES['file']['name'].'");
+}
+
+?>
+
+<?php
+
+function checkingfile($fname){
+  $command = escapeshellcmd('/home/testlinux/misproject/MIS-project/src/check_apk.py ' + $fname);
+  retunr $command;
 }
 
 ?>
