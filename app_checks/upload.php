@@ -35,8 +35,11 @@ echo checkingfile('/var/www/html/app_checks/upload/'.$_FILES['file']['name'].'')
 <?php
 
 function checkingfile($fname){
-  $command = escapeshellcmd('/home/testlinux/misproject/MIS-project/src/check_apk.py ' + $fname);
-  return $command;
+  $a = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
+  $command = $a.$fname;
+  print_r($command);
+  $answer = shell_exec($command);
+  return $answer;
 }
 
 ?>
