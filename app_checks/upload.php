@@ -35,7 +35,7 @@ echo "<br>檢測結果：" + checkingfile("/var/www/html/app_checks/upload/'.$_F
 
 function checkingfile($fname){
   $command = escapeshellcmd('/home/testlinux/misproject/MIS-project/src/check_apk.py ' + $fname);
-  retunr $command;
+  return $command;
 }
 
 ?>
