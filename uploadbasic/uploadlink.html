@@ -31,6 +31,8 @@
 <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
 <link rel="stylesheet" href="css/jquery.fileupload.css">
 <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+
+<link href="css/theme-Mountise2.css" rel="stylesheet"/>
 <!-- CSS adjustments for browsers with JavaScript disabled -->
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
@@ -56,7 +58,13 @@
 		  </script>
 </head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
+  <br><br><br>
+
+  <div id="particles-js" class="gradient"></div>
+    <div class="count-particles">
+              <span class="js-count-particles"></span>
+            </div>
+<div class="navbar navbar-default navbar-fixed-top" style="background: linear-gradient(rgba(41, 148, 255, 0.95),rgba(0, 229, 230, 0.95) ); ">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-fixed-top .navbar-collapse">
@@ -71,43 +79,43 @@
             <ul class="nav navbar-nav">
                 <li><a href="../works/works.php">Works</a></li>
                 <li><a href="#">App checks</a></li>
-                
-                
+
+
             </ul>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container2">
     <h1>上傳您的Apk檔或者填寫檔案網址</h1>
     <h2 class="lead">檢測是否為安全的apk</h2>
    <blockquote>
        <p>直接填寫apk檔案下載連結，也可以立刻進行檢測哦！</p>
        </blockquote>
-    
-    <ul class="nav nav-tabs">  
-        
+
+    <ul class="nav nav-tabs">
+
         <li class="active"><a href="angularjs.html"> upload apk for app checks</a></li>
-        <li class="active"><a href="uploadlink.html">paste links for app checks</a></li>  
+        <li class="active"><a href="uploadlink.html">paste links for app checks</a></li>
     </ul>
 
     <br>
 
     <form name='uploadlink' id='uploadlink' enctype="multipart/form-data">
-  
+
         <div class="col-lg-7">
             <span>連結：
-                
+
                 <input type="text" name='link' method="POST" class="css-input" id='link'>
-             
+
         <span class="btn btn-success fileinput-button" ng-class="{disabled: disabled}">
                     <i class="glyphicon glyphicon-cloud"></i>
-                     <span>Paste links...</span>         
+                     <span>Paste links...</span>
                     <input type="button" name="submit[]" value="Add links..." onclick='processFormData();' multiple ng-disabled="disabled">
                 </span>
        </div>
     </form>
-    <br>
-  
+    <br><br><br><br>
+
 </div>
 <!-- The blueimp Gallery widget -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">

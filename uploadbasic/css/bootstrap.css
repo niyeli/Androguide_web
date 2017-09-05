@@ -1612,6 +1612,30 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.container2 {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: rgba(255, 255, 255, 0.80);
+}
+@media (min-width: 768px) {
+  .container2 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container2 {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container2 {
+    width: 1170px;
+  }
+}
+
 .row {
   margin-left: -15px;
   margin-right: -15px;
