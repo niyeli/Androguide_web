@@ -29,10 +29,10 @@
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		  
+
 			ga('create', 'UA-104779247-1', 'auto');
 			ga('send', 'pageview');
-		  
+
 		  </script>
 	</head>
 	<body>
@@ -56,9 +56,9 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="../works.html">Ｗorks</a></li>
-						<li><a href="../app_checks/app_checks.html">App check</a></li>
+						<li><a href="../index.php">Home</a></li>
+						<li><a href="../works/works.php">Ｗorks</a></li>
+						<li><a href="../uploadbasic/angularjs.html">App check</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -105,8 +105,8 @@
 					<hr>
 
 					<!-- Responsive images -->
-					<h1>APKtool</h1>					
-					<p><img class="img-responsive" src="apktool/2.jpg" alt=""></p>					
+					<h1>APKtool</h1>
+					<p><img class="img-responsive" src="apktool/2.jpg" alt=""></p>
 					<div class="row">
 						<div class="col-sm-2"><img class="thumbnail img-responsive" src="apktool/1.jpg" alt=""></div>
 						<div class="col-sm-2"><img class="thumbnail img-responsive" src="apktool/3.jpg" alt=""></div>
@@ -117,7 +117,7 @@
 					</div>
 					<hr>
 
-					<!-- Lists -->				
+					<!-- Lists -->
 					<hr>
 					<h1>Taintdroid</h1>
 					<iframe src="https://www.slideshare.net/slideshow/embed_code/key/2ImeZz2mc7EzrO" width="1200" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
@@ -140,14 +140,14 @@
 								<input type="email" class="form-control" id="contactEmail" placeholder="Enter email">
 								<p class="help-block">Make sure you use a valid email address</p>
 							</div>
-							
+
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>
 					</div>
 					<hr>
 
 					<!-- Pager -->
-					
+
 					<nav>
 						<ul class="pager">
 							<li class="previous"><a href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>上一張卡片</a></li>

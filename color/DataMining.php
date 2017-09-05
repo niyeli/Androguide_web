@@ -56,9 +56,9 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="../works.html">Ｗorks</a></li>
-						<li><a href="../app_checks/app_checks.html">App check</a></li>
+						<li><a href="../index.php">Home</a></li>
+						<li><a href="../works/works.php">Ｗorks</a></li>
+						<li><a href="../uploadbasic/angularjs.html">App check</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -177,7 +177,7 @@ JIAN YUAN, (Member, IEEE), AND YONG REN, (Member, IEEE)
 				if (file_exists($filename)) {
 				    echo "<b>最後更新時間：</b>" . date ("F d Y H:i:s.", filemtime($filename));
 				}
-				?>          
+				?>
 
 
 

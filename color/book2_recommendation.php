@@ -59,7 +59,7 @@
                 <h6>WORK</h6>
               </div>
                   </a></li>
-              <li><a href="../app_checks/app_checks.html"><div class="feature col-sm-3 col-xs-3">
+              <li><a href="../uploadbasic/angularjs.html"><div class="feature col-sm-3 col-xs-3">
                 <i class="ion-arrow-graph-up-right"></i>
                 <h6>APP CHECK</h6>
               </div></a></li>
