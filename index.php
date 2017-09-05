@@ -14,34 +14,35 @@
 	<meta name="author" content="FREEHTML5.CO" />
 
 
-	<!-- <<?php
+	<?php
 
 		header('Content-type: text/html; charset=utf-8');    //編碼
 
 		global $_DB;
-		$_DB['host'] = "140.115.80.240";                 //填入host資料, 本機為localhost
+		$_DB['host'] = "localhost";                 //填入host資料, 本機為localhost
 		$_DB['username'] = "root";                //username
-		$_DB['password'] = "";      //password
+		$_DB['password'] = "rootroot1234";      //password
 		$_DB['dbname'] = "web";                //資料庫名稱
 
 		//使用 mysql_connect () 連結database , 參數帶入上面填好的資料
-		$link = mysqli_connect('140.115.80.240', 'root', 'rootroot1234', 'web');
-		//$conn = mysql_connect($_DB['host'],$_DB['username'],$_DB['password'],$_DB['dbname']);
+		//$link = mysqli_connect('140.115.80.240', 'root', 'rootroot1234', 'web');
+		$conn = mysqli_connect($_DB['host'],$_DB['username'],$_DB['password'],$_DB['dbname']);
+		//$link = mysql_pconnect($_DB['host'],$_DB['username'],$_DB['password']);
 		//
 		// //選擇資料庫
-		// mysql_select_db($_DB['dbname']);
+		 mysql_select_db($_DB['dbname']);
 		//
-		// //這裡可以做一個小測試看看是否連接到database
-		// if(@mysql_select_db($_DB['dbname'])){
-		//       echo "資料庫存在";}
-		// else{
-		//       echo "資料庫不存在";}
-		// //*******************************************
-		//
-		// //設定編碼
-		// mysql_query("SET NAMES 'UTF8'");
+		$sql = "SELECT id FROM web.article"; //在test資料表中選擇所有欄位
 
-		?> -->
+		//$result = mysql_query($sql) ;
+		//$show=mysql_fetch_row($result) or die(mysql_error()) ;
+		//print_r($show);
+
+		//echo $result;
+	 	//while($row = mysql_fetch_array($result)){//印出資料
+		//	 echo $row;
+	 	//}
+		?>
   <!--
 	//////////////////////////////////////////////////////
 
