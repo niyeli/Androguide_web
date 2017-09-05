@@ -41,7 +41,6 @@ function checkingfile($fname,$file){
   echo "<br>";
   print_r($command);
   echo "<br>";
-  $command = escapeshellcmd($command);
   $answer = exec($command);
   print_r($answer);
   return $answer;
