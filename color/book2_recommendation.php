@@ -49,7 +49,7 @@
             </div>
 
             <ul class="social_icons" >
-              <li><a href="../index.html">
+              <li><a href="../index.php">
                   <div class="feature col-sm-3 col-xs-3">
                 <i class="ion-heart"></i>
                 <h6>HOME</h6></div>
@@ -152,27 +152,39 @@ if (file_exists($filename)) {
 
 <h4><strong>瀏覽人數<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=140.115.80.240&digit=style/plain/10/&reloads=1" alt="" title="瀏覽" border="0"></a>人</strong></h4><a href="http://" target="_blank" style="font-family: Geneva, Arial,  Microsoft JhengHei; font-size: 7px; color: #330010; text-decoration: none;"></a>
 
- <div class="service row">
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-wand"></i>
-                <h6>DESIGN</h6>
-              </div>
+<div class="project">
 
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-cube"></i>
-                <h6>CODING</h6>
-              </div>
+ <li class="item col-sm-6 col-xs-12">
+    <figure>
+      <!-- Your picture -->
 
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-arrow-graph-up-right"></i>
-                <h6>ANALYSING</h6>
-              </div>
+      <!-- Picture's description below this one -->
+      <figcaption class="caption">
+        <div class="photo-details">
+          <h4></h4>
+          <span></span>
+        </div>
 
-              <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-bug"></i>
-                <h6>DETECTING</h6>
-              </div>
-            </div>
+      </figcaption>
+    </figure>
+  </li>
+  <li class="item col-sm-6 col-xs-12">
+     <figure>
+       <!-- Your picture -->
+         <a href="analysis_tool.php">
+       <img src="images/work_1.png" class="img-responsive" /></a>
+       <!-- Picture's description below this one -->
+       <figcaption class="caption">
+         <div class="photo-details">
+           <h4>Android分析工具的介紹</h4>
+           <span>Androguard APKtool Taintdroid</span>
+         </div>
+
+       </figcaption>
+     </figure>
+   </li>
+
+      </div>
 
 </div>
 

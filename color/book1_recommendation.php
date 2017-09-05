@@ -150,7 +150,7 @@ if (file_exists($filename)) {
    <figure>
      <!-- Your picture -->
        <a href="paper_recommendation.php">
-     <img src="images/work_2.png" class="img-responsive" /></a>
+     <img src="images/work_3.png" class="img-responsive" /></a>
      <!-- Picture's description below this one -->
      <figcaption class="caption">
        <div class="photo-details">

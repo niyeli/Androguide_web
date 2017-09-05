@@ -162,13 +162,13 @@
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a href="../article/DataMining.html">
+									<a href="../color/DataMining.html">
 										<h2>教學資源</h2>
 										<div class="content">
 											<p>PRIVACY AND DATA MINING(上)<br>
 												<?php
 												$filename = '教學資源';
-												$fileroute = '../article/DataMining.html';
+												$fileroute = '../article/DataMining.php';
 												$fliedate = date ("<b>F d Y H:i:s.</b>", filemtime($fileroute));
 												if (file_exists($fileroute)) {
 												    echo  $fliedate;
@@ -226,7 +226,7 @@
 									<span class="image">
 										<img src="images/pic05.jpg" alt="" />
 									</span>
-									<a href="../article/analysis_tool.html">
+									<a href="../color/analysis_tool.php">
 										<h2>Android分析工具的介紹</h2>
 										<div class="content">
 											<p>Androguard APKtool Taintdroid<br>
