@@ -77,7 +77,7 @@
     <h1>上傳您的Apk檔或者填寫檔案網址</h1>
     <h2 class="lead">檢測是否為安全的apk</h2>
    <blockquote>
-       <p>目前僅支援apk檔案類型，大小不可超過20mb唷！可以多檔最多5個同時上傳，支援拖拉進網頁的方式上傳哦！</p>
+       <p>目前僅支援apk檔案類型，大小不可超過100mb唷！可以多檔最多5個同時上傳，支援拖拉進網頁的方式上傳哦！</p>
        </blockquote>
     
     <ul class="nav nav-tabs">  
@@ -209,8 +209,8 @@ var limitUpload = function(){
         acceptFileTypes:  /(\.|\/)(apk|jpe?g|png)$/i,
         maxNumberOfFiles : 5,
         fileInput : uploader.find("input:file"),
-        //上傳限制20MB
-        maxFileSize: 20000000,
+        //上傳限制100MB
+        maxFileSize: 100000000,
         previewMaxWidth : 200,
         previewMaxHeight : 200    
     });}
