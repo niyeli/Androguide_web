@@ -32,10 +32,10 @@
 		// mysql_select_db($_DB['dbname']);
 		//
 		// //這裡可以做一個小測試看看是否連接到database
-		// if(@mysql_select_db($_DB['dbname'])){
-		//       echo "資料庫存在";}
-		// else{
-		//       echo "資料庫不存在";}
+		 if(@mysql_select_db($_DB['dbname'])){
+		       echo "資料庫存在";}
+		 else{
+		       echo "資料庫不存在";}
 		// //*******************************************
 		//
 		// //設定編碼
