@@ -63,7 +63,7 @@
                 <i class="ion-arrow-graph-up-right"></i>
                 <h6>APP CHECK</h6>
               </div></a></li>
-                <li><a href="../index.html" data-nav-section="About"><div class="feature col-sm-3 col-xs-3">
+                <li><a href="../index.php" data-nav-section="About"><div class="feature col-sm-3 col-xs-3">
                 <i class="ion-wand"></i>
                 <h6>ABOUT</h6>
                 </div></a></li>

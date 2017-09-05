@@ -131,7 +131,7 @@ if (file_exists($filename)) {
 <li class="item col-sm-6 col-xs-12">
    <figure>
      <!-- Your picture -->
-       <a href="/analysis_tool.php">
+       <a href="analysis_tool.php">
      <img src="images/work_1.png" class="img-responsive" /></a>
      <!-- Picture's description below this one -->
      <figcaption class="caption">
