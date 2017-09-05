@@ -37,11 +37,11 @@ echo '<a href="log/'.$_FILES['file']['name'].'">result/</a>';
 
 function checkingfile($fname,$file){
   $a = "/home/testlinux/misproject/MIS-project/src/check_apk.py ";
-  $command = 'nohup '.$a.$fname.' &>./log/'.$file.' &';
+  $command = 'nohup '.$a.$fname.' >./log/'.$file.' 2>&1 &';
   echo "<br>";
   print_r($command);
   echo "<br>";
-  $answer = exec($command);
+  $answer = shell_exec($command);
   print_r($answer);
   return $answer;
 }
