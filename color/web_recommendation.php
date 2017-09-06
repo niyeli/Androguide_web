@@ -152,7 +152,7 @@ if (file_exists($filename)) {
                     </a>
                 </div>
 
-            </div>
+          
 
 
 <div class="project">

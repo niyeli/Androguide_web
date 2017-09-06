@@ -155,7 +155,7 @@ if (file_exists($filename)) {
                     </a>
                 </div>
 
-            </div>
+          
 
 <div class="project">
 <li class="item col-sm-6 col-xs-12">
