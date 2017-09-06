@@ -129,21 +129,48 @@
   </ol>
 </blockquote><br/>
 
+<h4><strong>
+<?php
 
-<!-- <?php
-
-$filename = 'book2_recommendation.php';
+$filename = 'book1_recommendation.php';
 if (file_exists($filename)) {
-    echo "<b>最後更新時間：</b>" . date ("F d Y H:i:s.", filemtime($filename));
+    echo "<b>最後更新時間：</b>" . date ("Y m d H:i.", filemtime($filename));
 }
-?> -->
-
-<h4><strong>最後更新時間：2017-09-05</strong></h4>
+?>
+</strong></h4>
 
 <br/>
 
 <h4><strong>瀏覽人數<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=140.115.80.240&digit=style/plain/10/&reloads=1" alt="" title="瀏覽" border="0"></a>人</strong></h4><a href="http://" target="_blank" style="font-family: Geneva, Arial,  Microsoft JhengHei; font-size: 7px; color: #330010; text-decoration: none;"></a>
 
+<div class="service row">
+                    <a href="book1_recommendation.php" target="_blank" style="color:black;">
+                        <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-android-arrow-back"></i>
+                            <h6>Last</h6>
+                        </div>
+                    </a>
+                    <a href="../index.php" target="_blank" style="color:black;">
+                        <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-android-home"></i>
+                            <h6>Index</h6>
+                        </div>
+                    </a>
+                    <a href="../works/works.php" target="_blank" style="color:black;">
+                        <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-filing"></i>
+                            <h6>Other</h6>
+                        </div>
+                    </a>
+                    <a href="book2_recommendation.php" target="_blank" style="color:black;">
+                        <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-android-arrow-forward"></i>
+                            <h6>Next</h6>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
 
 <div class="project">
 <li class="item col-sm-6 col-xs-12">
