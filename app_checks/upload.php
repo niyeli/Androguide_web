@@ -28,7 +28,7 @@ move_uploaded_file($_FILES['file']['tmp_name'],'upload/'.$_FILES['file']['name']
 echo '<a href="upload/'.$_FILES['file']['name'].'">upload/'.$_FILES['file']['name'].'</a>';//顯示檔案路徑
 echo '<br>檢測結果：';
 checkingfile('/var/www/html/app_checks/upload/'.$_FILES['file']['name'].'',$_FILES['file']['name']);
-echo '<a href="log/'.$_FILES['file']['name'].'">result/</a>';
+echo '<a href="log/'.$_FILES['file']['name'].'.txt'.'">result/</a>';
 }
 
 ?>
