@@ -27,27 +27,22 @@ echo "暫存名稱: " . $_FILES["file"]["tmp_name"];
 move_uploaded_file($_FILES['file']['tmp_name'],'upload/'.$_FILES['file']['name']);//複製檔案
 echo '<a href="upload/'.$_FILES['file']['name'].'">upload/'.$_FILES['file']['name'].'</a>';//顯示檔案路徑
 echo '<br>檢測結果：';
-echo checkingfile('/var/www/html/app_checks/upload/'.$_FILES['file']['name'].'',$_FILES['file']['name']);
+checkingfile('/var/www/html/app_checks/upload/'.$_FILES['file']['name'].'',$_FILES['file']['name']);
 echo '<a href="log/'.$_FILES['file']['name'].'">result/</a>';
 }
 
 ?>
 
 <?php
-
-function checkingfile($fname,$file){
-  $a = "/home/testlinux/misproject/MIS-project/src/check_apk.py ";
-  $command = 'nohup '.$a.$fname.' &>./log/'.$file.' &';
-  echo "<br>";
-  print_r($command);
-  echo "<br>";
-  $answer = exec($command);
-  print_r($answer);
-  return $answer;
+//fpath為檔案路徑 
+function checkingfile($fpath,$fname){
+  $programPath = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
+  $command = 'nohup '.$programPath.' '.$fpath.' >./log/'.$fname.'.txt'.' 2>&1 &';
+  exec($command);
 }
 
 ?>
-
+i
 
 
 
