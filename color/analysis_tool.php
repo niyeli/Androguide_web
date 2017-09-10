@@ -58,7 +58,7 @@
 					<ul class="nav navbar-nav">
 						<li><a href="../index.php">Home</a></li>
 						<li><a href="../works/works.php">Ｗorks</a></li>
-						<li><a href="../uploadbasic/angularjs.html">App check</a></li>
+						<li><a href="../uploadbasic/angularjs.php">App check</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
