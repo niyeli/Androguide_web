@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$_SESSION['path']= "/github/123";
+	$_SESSION['path']= "140.115.80.240/uploadbasic/server/php/files/";
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -89,8 +89,8 @@
 
     <ul class="nav nav-tabs">
 
-        <li class="active"><a href="angularjs.html"> upload apks</a></li>
-        <li class="active"><a href="uploadlink.html">paste links</a></li>
+        <li class="active"><a href="angularjs.php"> upload apks</a></li>
+        <li class="active"><a href="uploadlink.php">paste links</a></li>
     </ul>
 
     <br>
@@ -131,7 +131,7 @@
             <tr data-ng-repeat="file in queue" data-ng-class="{'processing': file.$processing()}">
                 <td data-ng-switch data-on="!!file.thumbnailUrl">
                     <div class="preview" data-ng-switch-when="true">
-                        <a data-ng-href="{{file.url}}" title="{{file.name}}" download="{{file.name}}" data-gallery><img data-ng-src="{{file.thumbnailUrl}}" alt=""></a>       
+                        <a data-ng-href="{{file.url}}" title="{{file.name}}" download="{{file.name}}" data-gallery><img data-ng-src="{{file.thumbnailUrl}}" alt=""></a>
                     </div>
                     <div class="preview" data-ng-switch-default data-file-upload-preview="file"></div>
                 </td>
@@ -168,9 +168,9 @@
     </form>
     <br>
         <form action="upload.php" method="post">
-         
+
            <?php
-          
+
             if(isset($_SESSION['path'])) {
               //echo "The path is " .$_SESSION['path'] . ".<br>";
               echo "請輸入Email: <input required='required' type='email' name='email' \\/>";

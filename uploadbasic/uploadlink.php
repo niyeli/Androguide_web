@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	//$_SESSION['path']= "/github/123"
+	$_SESSION['path']= "140.115.80.240/uploadbasic/server/php/files/";
 ?>
 <!DOCTYPE HTML>
 <!--

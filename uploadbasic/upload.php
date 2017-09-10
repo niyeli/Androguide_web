@@ -32,7 +32,7 @@
 // }
 session_start();
 if(isset($_SESSION['path']))
-  echo $_SESSION['path'];
+  echo $_SESSION['path'].'<br>';
   else
   echo "沒有path";
 
@@ -44,7 +44,7 @@ if(isset($_SESSION['path']))
     echo '檢測完畢後，結果將寄至: '.$email.'<br>';
     echo '您可直接關閉視窗！';
     echo '謝謝您的使用！';
-    
+
 ?>
 
 <?php
