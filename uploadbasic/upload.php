@@ -31,15 +31,14 @@
 // echo '<a href="log/'.$_FILES['file']['name'].'.txt'.'">result/</a>';
 // }
 session_start();
-if(isset($_SESSION['path']))
-  echo $_SESSION['path'].'<br>';
+error_reporting(0);
+if(isset($_SESSION['path'][0]))
+  echo $_SESSION['path'][0].'<br>';
   else
   echo "沒有path";
 
-  $fpath=$_SESSION['path'];
+  $fpath=$_SESSION['path'][0];
 
-
-    error_reporting(0);
     $email=$_POST['email'];
     echo '檢測完畢後，結果將寄至: '.$email.'<br>';
     echo '您可直接關閉視窗！';

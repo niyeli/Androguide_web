@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$_SESSION['path']= "140.115.80.240/uploadbasic/server/php/files/";
+	//$_SESSION['path']= "140.115.80.240/uploadbasic/server/php/files/";
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -170,8 +170,11 @@
         <form action="upload.php" method="post">
 
            <?php
+					 	 error_reporting(0);
+						 $_SESSION['path'] = glob('server/php/files/*.apk');
+						 echo $_SESSION['path'][0].".<br>";
 
-            if(isset($_SESSION['path'])) {
+            if(isset($_SESSION['path'][0])) {
               //echo "The path is " .$_SESSION['path'] . ".<br>";
 							echo "上傳完成後請輸入Email，我們將會寄出檢測結果。".".<br>".".<br>";
               echo "Your Email: <input required='required' type='email' name='email' \\/>"." ";
