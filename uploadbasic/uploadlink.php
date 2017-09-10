@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$_SESSION['path']= "/github/123"
+	//$_SESSION['path']= "/github/123"
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -84,7 +84,7 @@
     </div>
 </div>
 <div class="container2">
-    <h1>上傳您的Apk檔或者填寫檔案網址</h1>
+    <h1>上傳Apk/填寫檔案網址</h1>
     <h2 class="lead">檢測是否為安全的apk</h2>
    <blockquote>
        <p>直接填寫apk檔案下載連結，也可以立刻進行檢測哦！</p>
@@ -98,7 +98,7 @@
 
     <br>
 
-    <form name='uploadlink' id='uploadlink' enctype="multipart/form-data">
+    <form name='uploadlink' action="upload.php" id='uploadlink' enctype="multipart/form-data">
 
         <div class="col-lg-7">
             <span>連結：

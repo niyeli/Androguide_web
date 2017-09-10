@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$_SESSION['path']= "/github/123"
+	$_SESSION['path']= "/github/123";
 ?>
 <!DOCTYPE HTML>
 <!--
@@ -81,21 +81,21 @@
     </div>
 </div>
 <div class="container2">
-    <h1>上傳您的Apk檔或者填寫檔案網址</h1>
+    <h1>上傳Apk檔/填寫檔案網址</h1>
     <h2 class="lead">檢測是否為安全的apk</h2>
    <blockquote>
-       <p>目前僅支援apk檔案類型，大小不可超過100mb唷！可以多檔最多5個同時上傳，支援拖拉進網頁的方式上傳哦！</p>
+       <p>目前僅支援apk檔案類型，大小不可超過100mb唷！支援拖拉進網頁的方式上傳哦！</p>
        </blockquote>
 
     <ul class="nav nav-tabs">
 
-        <li class="active"><a href="angularjs.php"> upload apk for app checks</a></li>
-        <li class="active"><a href="uploadlink.php">paste links for app checks</a></li>
+        <li class="active"><a href="angularjs.html"> upload apks</a></li>
+        <li class="active"><a href="uploadlink.html">paste links</a></li>
     </ul>
 
     <br>
     <!-- The file upload form used as target for the file upload widget -->
-    <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data" data-ng-app="demo" data-ng-controller="DemoFileUploadController" data-file-upload="options" data-ng-class="{'fileupload-processing': processing() || loadingFiles}">
+    <form id="fileupload" action="upload.php" method="POST" enctype="multipart/form-data" data-ng-app="demo" data-ng-controller="DemoFileUploadController" data-file-upload="options" data-ng-class="{'fileupload-processing': processing() || loadingFiles}">
         <!-- Redirect browsers with JavaScript disabled to the origin page -->
         <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
@@ -126,24 +126,12 @@
                 <div class="progress-extended">&nbsp;</div>
             </div>
         </div>
-        <form>
-          <!-- 不知為何不留著下面會無法傳訊息        　 -->
-        </form>
-        <form  action="upload.php" method="post">
-          <?php
-            if(!empty($_SESSION['path'])) {
-              //echo "The path is " .$_SESSION['path'] . ".<br>";
-              echo "請輸入Email: <input type='text' name='email' \\/>";
-              echo "<input type='submit' name='submit' value='送出' >".".<br>";
-            }
-          ?>
-        </form>
         <!-- The table listing the files available for upload/download -->
         <table class="table table-striped files ng-cloak">
             <tr data-ng-repeat="file in queue" data-ng-class="{'processing': file.$processing()}">
                 <td data-ng-switch data-on="!!file.thumbnailUrl">
                     <div class="preview" data-ng-switch-when="true">
-                        <a data-ng-href="{{file.url}}" title="{{file.name}}" download="{{file.name}}" data-gallery><img data-ng-src="{{file.thumbnailUrl}}" alt=""></a>
+                        <a data-ng-href="{{file.url}}" title="{{file.name}}" download="{{file.name}}" data-gallery><img data-ng-src="{{file.thumbnailUrl}}" alt=""></a>       
                     </div>
                     <div class="preview" data-ng-switch-default data-file-upload-preview="file"></div>
                 </td>
@@ -179,8 +167,21 @@
         </table>
     </form>
     <br>
-
+        <form action="upload.php" method="post">
+         
+           <?php
+          
+            if(isset($_SESSION['path'])) {
+              //echo "The path is " .$_SESSION['path'] . ".<br>";
+              echo "請輸入Email: <input required='required' type='email' name='email' \\/>";
+              echo "<input type='submit' name='submit' value='送出' >".".<br>";
+            }
+           // session_destroy();
+          ?>
+        </form>
 </div>
+
+
 <!-- The blueimp Gallery widget -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
     <div class="slides"></div>
@@ -225,8 +226,8 @@
 var limitUpload = function(){
     var uploader = $("#fileupload");
     uploader.fileupload({
-        acceptFileTypes:  /(\.|\/)(apk|jpe?g|png)$/i,
-        maxNumberOfFiles : 5,
+        acceptFileTypes:  /(\.|\/)(apk)$/i,
+        maxNumberOfFiles : 2,
         fileInput : uploader.find("input:file"),
         //上傳限制100MB
         maxFileSize: 100000000,
