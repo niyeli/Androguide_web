@@ -59,7 +59,7 @@
 <body>
   <br>
 
-<div class="navbar navbar-default navbar-fixed-top" style="background: linear-gradient(rgba(0, 229, 230, 0.95), rgba(189, 255, 189, 0.95)); ">
+<div class="navbar navbar-default navbar-fixed-top" style="background: linear-gradient(rgba(71, 163, 255, 0.95), rgba(0, 204, 204, 0.95)); ">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-fixed-top .navbar-collapse">
@@ -173,7 +173,8 @@
 
             if(isset($_SESSION['path'])) {
               //echo "The path is " .$_SESSION['path'] . ".<br>";
-              echo "請輸入Email: <input required='required' type='email' name='email' \\/>";
+							echo "上傳完成後請輸入Email，我們將會寄出檢測結果。".".<br>".".<br>";
+              echo "Your Email: <input required='required' type='email' name='email' \\/>"." ";
               echo "<input type='submit' name='submit' value='送出' >".".<br>";
             }
            // session_destroy();

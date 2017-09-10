@@ -62,7 +62,7 @@
 <body>
   <br>
 
-<div class="navbar navbar-default navbar-fixed-top" style="background: linear-gradient(rgba(0, 229, 230, 0.95),rgba(189, 255, 189, 0.95) ); ">
+<div class="navbar navbar-default navbar-fixed-top" style="background: linear-gradient(rgba(71, 163, 255, 0.95), rgba(0, 204, 204, 0.95) ); ">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-fixed-top .navbar-collapse">
@@ -92,8 +92,8 @@
 
     <ul class="nav nav-tabs">
 
-        <li class="active"><a href="angularjs.php"> upload apk for app checks</a></li>
-        <li class="active"><a href="uploadlink.php">paste links for app checks</a></li>
+        <li class="active"><a href="angularjs.php"> upload apks</a></li>
+        <li class="active"><a href="uploadlink.php">paste links</a></li>
     </ul>
 
     <br>
@@ -112,14 +112,15 @@
                 </span>
        </div>
     </form>
-    <br><br>
+    <br><br><br><br>
     <div class="col-lg-7">
 
       <form  action="upload.php" method="post">
         <?php
           if(!empty($_SESSION['path'])) {
             //echo "The path is " .$_SESSION['path'] . ".<br>";
-            echo "請輸入Email: <input type='text' name='email' \\/>";
+						echo "上傳完成後請輸入Email，我們將會寄出檢測結果。".".<br>".".<br>";
+            echo "Your Email: <input type='text' name='email' \\/>"." ";
             echo "<input type='submit' name='submit' value='送出' >".".<br>";
           }
         ?>
