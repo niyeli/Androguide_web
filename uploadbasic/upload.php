@@ -45,16 +45,19 @@ if(isset($_SESSION['path'][0]))
     echo '檢測完畢後，結果將寄至: '.$email.'<br>';
     echo '您可直接關閉視窗！';
     echo '謝謝您的使用！';
+    checkingfile($fpath,$fname,$email);
+    //echo '<a href="log/'.$_FILES['file']['name'].'.txt'.'">result/</a>';
 
 ?>
 
 <?php
-  //fpath為檔案路徑
-  function checkingfile($fpath,$email,$fname){
-    $programPath = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
-    $command = 'nohup '.$programPath.' '.$fpath.' >./log/'.$fname.'.txt'.' 2>&1 &';
-    exec($command);
-  }
+//fpath為檔案路徑 
+function checkingfile($fpath,$fname,$email){
+  $programPath = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
+  $command = 'nohup python3 '.$programPath.' -a '.$fpath.' -b '.$email.' -c '.$fname.' &';
+  print_r($command);
+  exec($command);
+}
   session_destroy();
 ?>
 
