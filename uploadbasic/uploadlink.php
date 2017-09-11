@@ -119,6 +119,9 @@
 					error_reporting(0);
 					$_SESSION['path'] = glob('server/php/files/*.apk');
 					echo $_SESSION['path'][0].".<br>";
+					$_SESSION['filename'] = basename ($_SESSION['path'][0]);
+					echo $_SESSION['filename'].".<br>";
+
 
           if(isset($_SESSION['path'][0])) {
             //echo "The path is " .$_SESSION['path'] . ".<br>";

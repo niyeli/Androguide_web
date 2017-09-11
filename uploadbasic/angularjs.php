@@ -168,19 +168,18 @@
     </form>
     <br>
         <form action="upload.php" method="post">
-
            <?php
 					 	 error_reporting(0);
 						 $_SESSION['path'] = glob('server/php/files/*.apk');
 						 echo $_SESSION['path'][0].".<br>";
+						 $_SESSION['filename'] = basename ($_SESSION['path'][0]);
+	 					 echo $_SESSION['filename'].".<br>";
 
             if(isset($_SESSION['path'][0])) {
-              //echo "The path is " .$_SESSION['path'] . ".<br>";
 							echo "上傳完成後請輸入Email，我們將會寄出檢測結果。".".<br>".".<br>";
               echo "Your Email: <input required='required' type='email' name='email' \\/>"." ";
               echo "<input type='submit' name='submit' value='送出' >".".<br>";
             }
-           // session_destroy();
           ?>
         </form>
 </div>

@@ -38,8 +38,10 @@ if(isset($_SESSION['path'][0]))
   echo "沒有path";
 
   $fpath=$_SESSION['path'][0];
+  $fname = $_SESSION['filename'];
 
     $email=$_POST['email'];
+    echo $fname.'<br>';
     echo '檢測完畢後，結果將寄至: '.$email.'<br>';
     echo '您可直接關閉視窗！';
     echo '謝謝您的使用！';
@@ -48,7 +50,7 @@ if(isset($_SESSION['path'][0]))
 
 <?php
   //fpath為檔案路徑
-  function checkingfile($fpath,$email){
+  function checkingfile($fpath,$email,$fname){
     $programPath = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
     $command = 'nohup '.$programPath.' '.$fpath.' >./log/'.$fname.'.txt'.' 2>&1 &';
     exec($command);
