@@ -39,10 +39,6 @@
 <!-- CSS adjustments for browsers with JavaScript disabled -->
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
-
-
-
-
 <style>
 /* Hide Angular JS elements before initializing */
 .ng-cloak {
@@ -89,7 +85,6 @@
     <h2 class="lead">檢測是否為安全的apk</h2>
    <blockquote>
        <p>目前僅支援apk檔案類型，大小不可超過100mb唷！支援拖拉進網頁的方式上傳哦！</p>
-			 <p>完成上傳後，請點選"確認上傳"，我們將會把解測結果寄至您的信箱，謝謝！</p>
        </blockquote>
 
     <ul class="nav nav-tabs">
@@ -112,18 +107,14 @@
                     <span>Add files...</span>
                     <input type="file" name="files[]" multiple ng-disabled="disabled">
                 </span>
-                <!-- <button type="button" class="btn btn-primary start" data-ng-click="submit()">
+                <button type="button" class="btn btn-primary start" data-ng-click="submit()">
                     <i class="glyphicon glyphicon-upload"></i>
                     <span>Start upload</span>
-                </button> -->
+                </button>
                 <button type="button" class="btn btn-warning cancel" data-ng-click="cancel()">
                     <i class="glyphicon glyphicon-ban-circle"></i>
                     <span>Cancel upload</span>
                 </button>
-								<button type="button" class="btn btn-primary start" onclick="disp_prompt()">
-										<i class="glyphicon glyphicon-upload"></i>
-										<span>確認上傳</span>
-								</button>
                 <!-- The global file processing state -->
                 <span class="fileupload-process"></span>
             </div>
@@ -171,49 +162,24 @@
                         <i class="glyphicon glyphicon-trash"></i>
                         <span>Delete</span>
                     </button>
-
-
                 </td>
             </tr>
         </table>
     </form>
     <br>
-		<!-- <form>
-
-			<input type="button" onclick="disp_prompt()" value="確認上傳">
-
-		</form> -->
-
-		<script type="text/javascript">
-
-			function disp_prompt()
-			  {
-			  var email=prompt("Please enter your email","")
-			  if (email!=null && email!="")
-			    {
-						<?php
-							//$_SESSION['email'] = email;
-
-			    	?>
-						window.alert('檢測完畢後，結果將寄至: '+email+ "\n" + "您可直接關閉視窗！" + "\n" + "謝謝您的使用！");
-			    }
-			  }
-		</script>
-
-
         <form action="upload.php" method="post">
            <?php
-						// 	 error_reporting(0);
-						//  $_SESSION['path'] = glob('server/php/files/*.apk');
-						//  echo $_SESSION['path'][0].".<br>";
-						//  $_SESSION['filename'] = basename ($_SESSION['path'][0]);
-						// 	 echo $_SESSION['filename'].".<br>";
-						//
-            // if(isset($_SESSION['path'][0])) {
-						// 	echo "上傳完成後請輸入Email，我們將會寄出檢測結果。".".<br>".".<br>";
-            //   echo "Your Email: <input required='required' type='email' name='email' \\/>"." ";
-            //   echo "<input type='submit' name='submit' value='送出' >".".<br>";
-            // }
+					 	 error_reporting(0);
+						 $_SESSION['path'] = glob('server/php/files/*.apk');
+						 echo $_SESSION['path'][0].".<br>";
+						 $_SESSION['filename'] = basename ($_SESSION['path'][0]);
+	 					 echo $_SESSION['filename'].".<br>";
+
+            if(isset($_SESSION['path'][0])) {
+							echo "上傳完成後請輸入Email，我們將會寄出檢測結果。".".<br>".".<br>";
+              echo "Your Email: <input required='required' type='email' name='email' \\/>"." ";
+              echo "<input type='submit' name='submit' value='送出' >".".<br>";
+            }
           ?>
         </form>
 </div>
