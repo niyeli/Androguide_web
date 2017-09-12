@@ -39,6 +39,10 @@
 <!-- CSS adjustments for browsers with JavaScript disabled -->
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
+
+
+
+
 <style>
 /* Hide Angular JS elements before initializing */
 .ng-cloak {
@@ -167,6 +171,29 @@
         </table>
     </form>
     <br>
+		<form>
+
+			<input type="button" onclick="disp_prompt()" value="確認上傳">
+
+		</form>
+
+		<script type="text/javascript">
+
+			function disp_prompt()
+			  {
+			  var email=prompt("Please enter your email","")
+			  if (email!=null && email!="")
+			    {
+						<?php
+							//$_SESSION['email'] = email;
+
+			    	?>
+						window.alert('檢測完畢後，結果將寄至: '+email+ "\n" + "您可直接關閉視窗！" + "\n" + "謝謝您的使用！");
+			    }
+			  }
+		</script>
+
+
         <form action="upload.php" method="post">
            <?php
 					 	 error_reporting(0);
