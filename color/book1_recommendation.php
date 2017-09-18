@@ -52,19 +52,19 @@
                             <h6>Last</h6>
                         </div>
                     </a>
-                    <a href="../index.php" target="_blank" style="color:black;">
+                    <a href="../index.php" target="_blank">
                         <div class="feature col-sm-3 col-xs-3">
                             <i class="ion-android-home"></i>
                             <h6>Index</h6>
                         </div>
                     </a>
-                    <a href="../works/works.php" target="_blank" style="color:black;">
+                    <a href="../works/works.php" target="_blank">
                         <div class="feature col-sm-3 col-xs-3">
                             <i class="ion-filing"></i>
                             <h6>Other</h6>
                         </div>
                     </a>
-                    <a href="book2_recommendation.php" target="_blank" style="color:black;">
+                    <a href="book2_recommendation.php" target="_blank">
                         <div class="feature col-sm-3 col-xs-3">
                             <i class="ion-android-arrow-forward"></i>
                             <h6>Next</h6>

@@ -47,6 +47,32 @@
                   <h3>Android Security Internals</h3>
               </div>
             </div>
+            <div class="social_icons">
+                    <a href="web_recommendation.php" target="_blank">
+                        <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-android-arrow-back"></i>
+                            <h6>Last</h6>
+                        </div>
+                    </a>
+                    <a href="../index.php" target="_blank">
+                        <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-android-home"></i>
+                            <h6>Index</h6>
+                        </div>
+                    </a>
+                    <a href="../works/works.php" target="_blank">
+                        <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-filing"></i>
+                            <h6>Other</h6>
+                        </div>
+                    </a>
+                    <a href="book1_recommendation.php" target="_blank">
+                        <div class="feature col-sm-3 col-xs-3">
+                            <i class="ion-android-arrow-forward"></i>
+                            <h6>Next</h6>
+                        </div>
+                    </a>
+                </div>
 
            
 
@@ -134,32 +160,7 @@ if (file_exists($filename)) {
 
 
 <h4><strong>瀏覽人數<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=140.115.80.240&digit=style/plain/10/&reloads=1" alt="" title="瀏覽" border="0"></a>人</strong></h4><a href="http://" target="_blank" style="font-family: Geneva, Arial,  Microsoft JhengHei; font-size: 7px; color: #330010; text-decoration: none;"></a>
-<div class="service row">
-                    <a href="book1_recommendation.php" target="_blank" style="color:black;">
-                        <div class="feature col-sm-3 col-xs-3">
-                            <i class="ion-android-arrow-back"></i>
-                            <h6>Last</h6>
-                        </div>
-                    </a>
-                    <a href="../index.php" target="_blank" style="color:black;">
-                        <div class="feature col-sm-3 col-xs-3">
-                            <i class="ion-android-home"></i>
-                            <h6>Index</h6>
-                        </div>
-                    </a>
-                    <a href="../works/works.php" target="_blank" style="color:black;">
-                        <div class="feature col-sm-3 col-xs-3">
-                            <i class="ion-filing"></i>
-                            <h6>Other</h6>
-                        </div>
-                    </a>
-                    <a href="paper_recommendation.php" target="_blank" style="color:black;">
-                        <div class="feature col-sm-3 col-xs-3">
-                            <i class="ion-android-arrow-forward"></i>
-                            <h6>Next</h6>
-                        </div>
-                    </a>
-                     </div>
+
 
 </div>
 
