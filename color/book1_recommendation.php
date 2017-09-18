@@ -46,28 +46,8 @@
                   <P></P>
             </div>
 
-             <ul class="social_icons" >
-              <li><a href="../index.php">
-                  <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-heart"></i>
-                <h6>HOME</h6></div>
-                  </a></li>
-              <li><a href="../works/works.php"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-cube"></i>
-                <h6>WORK</h6>
-              </div>
-                  </a></li>
-              <li><a href="../uploadbasic/angularjs.php"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-arrow-graph-up-right"></i>
-                <h6>APP CHECK</h6>
-              </div></a></li>
-                <li><a href="../index.php" data-nav-section="About"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-wand"></i>
-                <h6>ABOUT</h6>
-                     </div></a></li>
-
-
-            </ul>
+            
+             
 
 
           </div>
@@ -144,7 +124,7 @@ if (file_exists($filename)) {
 <h4><strong>瀏覽人數<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=140.115.80.240&digit=style/plain/10/&reloads=1" alt="" title="瀏覽" border="0"></a>人</strong></h4><a href="http://" target="_blank" style="font-family: Geneva, Arial,  Microsoft JhengHei; font-size: 7px; color: #330010; text-decoration: none;"></a>
 
 <div class="service row">
-                    <a href="book1_recommendation.php" target="_blank" style="color:black;">
+                    <a href="web_recommendation.php" target="_blank" style="color:black;">
                         <div class="feature col-sm-3 col-xs-3">
                             <i class="ion-android-arrow-back"></i>
                             <h6>Last</h6>
@@ -171,39 +151,8 @@ if (file_exists($filename)) {
                 </div>
 
 
-<div class="project">
-<li class="item col-sm-6 col-xs-12">
-   <figure>
-     <!-- Your picture -->
-       <a href="paper_recommendation.php">
-     <img src="images/work_3.png" class="img-responsive" /></a>
-     <!-- Picture's description below this one -->
-     <figcaption class="caption">
-       <div class="photo-details">
-         <h4>Paper導覽</h4>
-         <span></span>
-       </div>
 
-     </figcaption>
-   </figure>
- </li>
 
- <li class="item col-sm-6 col-xs-12">
-    <figure>
-      <!-- Your picture -->
-        <a href="DataMining.php">
-      <img src="images/work_1.png" class="img-responsive" /></a>
-      <!-- Picture's description below this one -->
-      <figcaption class="caption">
-        <div class="photo-details">
-          <h4>教學資源</h4>
-          <span>PRIVACY AND DATA MINING(上)</span>
-        </div>
-
-      </figcaption>
-    </figure>
-  </li>
-      </div>
 
           </div>
 
