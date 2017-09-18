@@ -45,7 +45,7 @@
               <h3 class="uppercase">Android Hacker's Handbook</h3>
                   <P></P>
             </div>
-            <div class="service row">
+            <div class="h-content">
                     <a href="web_recommendation.php" target="_blank" style="color:black;">
                         <div class="feature col-sm-3 col-xs-3">
                             <i class="ion-android-arrow-back"></i>
