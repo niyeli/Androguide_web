@@ -162,7 +162,7 @@
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a href="../color/DataMining.html">
+									<a href="../color/DataMining.php">
 										<h2>教學資源</h2>
 										<div class="content">
 											<p>PRIVACY AND DATA MINING(上)<br>
