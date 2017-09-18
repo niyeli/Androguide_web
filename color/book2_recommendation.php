@@ -48,26 +48,7 @@
               </div>
             </div>
 
-            <ul class="social_icons" >
-              <li><a href="../index.php">
-                  <div class="feature col-sm-3 col-xs-3">
-                <i class="ion-heart"></i>
-                <h6>HOME</h6></div>
-                  </a></li>
-              <li><a href="../works/works.php"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-cube"></i>
-                <h6>WORK</h6>
-              </div>
-                  </a></li>
-              <li><a href="../uploadbasic/angularjs.php"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-arrow-graph-up-right"></i>
-                <h6>APP CHECK</h6>
-              </div></a></li>
-                <li><a href="../index.php" data-nav-section="About"><div class="feature col-sm-3 col-xs-3">
-                <i class="ion-wand"></i>
-                <h6>ABOUT</h6>
-                </div></a></li>
-            </ul>
+           
 
 
             <div id="particles-js" class="gradient">
@@ -178,45 +159,9 @@ if (file_exists($filename)) {
                             <h6>Next</h6>
                         </div>
                     </a>
-                </div>
+                     </div>
 
 
-
-<div class="project">
-
- <li class="item col-sm-6 col-xs-12">
-    <figure>
-      <!-- Your picture -->
-
-      <!-- Picture's description below this one -->
-      <figcaption class="caption">
-        <div class="photo-details">
-          <h4></h4>
-          <span></span>
-        </div>
-
-      </figcaption>
-    </figure>
-  </li>
-  <li class="item col-sm-6 col-xs-12">
-     <figure>
-       <!-- Your picture -->
-         <a href="analysis_tool.php">
-       <img src="images/work_1.png" class="img-responsive" /></a>
-       <!-- Picture's description below this one -->
-       <figcaption class="caption">
-         <div class="photo-details">
-           <h4>Android分析工具的介紹</h4>
-           <span>Androguard APKtool Taintdroid</span>
-         </div>
-
-       </figcaption>
-     </figure>
-   </li>
-
-      </div>
-
-</div>
 
 
           <footer>
@@ -224,7 +169,7 @@ if (file_exists($filename)) {
           </footer>
         </div>
       </section>
-
+      
       <script src="js/jquery-1.11.3.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/animsition.min.js"></script>
