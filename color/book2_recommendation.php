@@ -243,7 +243,6 @@ if (file_exists($filename)) {
       <script src="js/photoswipe-ui-default.min.js"></script>
       <script src="js/jqinstapics.min.js"></script>
       <script src="js/particles.min.js"></script>
-      <script type="text/javascript">
       <script src="js/script.js"></script>
       
       
