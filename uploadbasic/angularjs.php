@@ -167,14 +167,6 @@
         </table>
     </form>
     <br>
-    <div class="col-lg-7">   
-
-        <span class="btn btn-success fileinput-button" ng-class="{disabled: disabled}">
-                    <i class="glyphicon glyphicon-ok-sign"></i>
-                     <span>確認上傳完成</span>                   
-                   <input type="button" value="refresh" onclick="location.reload()"> 
-                </span>
-       </div>
         <form action="upload.php" method="post">
            <?php
 					 	 error_reporting(0);
