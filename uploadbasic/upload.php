@@ -55,7 +55,7 @@ if(isset($_SESSION['path'][0]))
 function checkingfile($fpath,$fname,$email){
   $programPath = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
   $command = 'python3 '.$programPath.' -a '.$fpath.' -b '.$email.' -c '.$fname.' > /dev/null &';
-  print_r($command);
+  //print_r($command);
   exec($command);
 }
   session_destroy();
