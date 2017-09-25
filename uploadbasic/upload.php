@@ -54,7 +54,7 @@ if(isset($_SESSION['path'][0]))
 //fpath為檔案路徑 
 function checkingfile($fpath,$fname,$email){
   $programPath = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
-  $command = 'nohup python3 '.$programPath.' -a '.$fpath.' -b '.$email.' -c '.$fname.' &';
+  $command = 'python3 '.$programPath.' -a '.$fpath.' -b '.$email.' -c '.$fname.' > /dev/null &';
   print_r($command);
   exec($command);
 }
