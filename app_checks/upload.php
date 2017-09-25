@@ -35,11 +35,9 @@ echo '<a href="log/'.$_FILES['file']['name'].'.txt'.'">result/</a>';
 
 <?php
 //fpath為檔案路徑 
-function checkingfile($fpath,$fname){
-  $email = "hao0628@gmail.com";
+function checkingfile($fpath,$fname,$email){
   $programPath = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
-  $fpath = "/home/testlinux/misproject/MIS-project/src/demo.apk";
-  $command = 'python3 '.$programPath.' -a '.$fpath.' -b "'.$email.'" -c "'.$fname.'" > /dev/null &';
+  $command = 'python3 '.$programPath.' -a '.$fpath.' -b '.$email.' -c '.$fname.' > /dev/null &';
   exec($command);
 }
 
