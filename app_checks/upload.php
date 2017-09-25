@@ -39,7 +39,7 @@ function checkingfile($fpath,$fname){
   $email = "hao0628@gmail.com";
   $programPath = "/home/testlinux/misproject/MIS-project/src/check_apk.py";
   $fpath = "/home/testlinux/misproject/MIS-project/src/demo.apk";
-  $command = 'nohup '.$programPath.' '.$fpath.' "'.$email.'" "'.$fname.'" >./log/'.$fname.'.txt'.' 2>&1 &';
+  $command = 'python3 '.$programPath.' -a '.$fpath.' -b "'.$email.'" -c "'.$fname.'" > /dev/null &';
   exec($command);
 }
 
