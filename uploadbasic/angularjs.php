@@ -81,43 +81,33 @@
     </div>
 </div>
 <div class="container2">
-    <h1>上傳Apk檔/填寫檔案網址</h1>
-    <h2 class="lead">檢測是否為安全的apk</h2>
-   <blockquote>
-       <p>目前僅支援apk檔案類型，大小不可超過100mb唷！支援拖拉進網頁的方式上傳哦！</p>
-       </blockquote>
 
-    <ul class="nav nav-tabs">
+		
 
-        <li class="active"><a href="angularjs.php"> upload apks</a></li>
-        <li class="active"><a href="uploadlink.php">paste links</a></li>
-    </ul>
-
-    <br>
     <!-- The file upload form used as target for the file upload widget -->
     <form id="fileupload" action="upload.php" method="POST" enctype="multipart/form-data" data-ng-app="demo" data-ng-controller="DemoFileUploadController" data-file-upload="options" data-ng-class="{'fileupload-processing': processing() || loadingFiles}">
         <!-- Redirect browsers with JavaScript disabled to the origin page -->
         <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
-        <div class="row fileupload-buttonbar">
+         <div class="row fileupload-buttonbar" style="text-align:center;">
             <div class="col-lg-7">
                 <!-- The fileinput-button span is used to style the file input field as button -->
-                <span class="btn btn-success fileinput-button" ng-class="{disabled: disabled}">
-                    <i class="glyphicon glyphicon-plus"></i>
-                    <span>Add files...</span>
-                    <input type="file" name="files[]" multiple ng-disabled="disabled">
-                </span>
+                 <span class="btn fileinput-button" ng-class="{disabled: disabled}" style="background-image:url(img/upload.png);display:block; margin:auto;width:800px;height:260px;margin:auto;background-repeat:no-repeat;border:5px #97CBFF dashed;" data-toggle="tooltip" data-placement="right" title="選擇APK進行檢測" >
+                    <input type="file" name="files[]"  multiple ng-disabled="disabled">
+                </span><br>
                 <button type="button" class="btn btn-primary start" data-ng-click="submit()">
                     <i class="glyphicon glyphicon-upload"></i>
-                    <span>Start upload</span>
+                    <span>上傳</span>
                 </button>
-                <button type="button" class="btn btn-warning cancel" data-ng-click="cancel()">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
-                    <span>Cancel upload</span>
-                </button>
+                <span type="button" class="btn btn-danger fileinput-button" data-toggle="tooltip" data-placement="right" title="確定檢測!">
+                    <i class="glyphicon glyphicon-ok-sign"></i>
+                     <span>確認上傳完成</span>
+                   <input type="button" value="refresh" onclick="location.reload()">
+                </span>
                 <!-- The global file processing state -->
                 <span class="fileupload-process"></span>
             </div>
+
             <!-- The global progress state -->
             <div class="col-lg-5 fade" data-ng-class="{in: active()}">
                 <!-- The global progress bar -->
@@ -150,10 +140,7 @@
                     <div class="progress progress-striped active fade" data-ng-class="{pending: 'in'}[file.$state()]" data-file-upload-progress="file.$progress()"><div class="progress-bar progress-bar-success" data-ng-style="{width: num + '%'}"></div></div>
                 </td>
                 <td>
-                    <button type="button" class="btn btn-primary start" data-ng-click="file.$submit()" data-ng-hide="!file.$submit || options.autoUpload" data-ng-disabled="file.$state() == 'pending' || file.$state() == 'rejected'">
-                        <i class="glyphicon glyphicon-upload"></i>
-                        <span>Start</span>
-                    </button>
+
                     <button type="button" class="btn btn-warning cancel" data-ng-click="file.$cancel()" data-ng-hide="!file.$cancel">
                         <i class="glyphicon glyphicon-ban-circle"></i>
                         <span>Cancel</span>
@@ -171,14 +158,16 @@
            <?php
 					 	 error_reporting(0);
 						 $_SESSION['path'] = glob('server/php/files/*.apk');
-						 echo $_SESSION['path'][0].".<br>";
+						// echo $_SESSION['path'][0].".<br>";
 						 $_SESSION['filename'] = basename ($_SESSION['path'][0]);
-	 					 echo $_SESSION['filename'].".<br>";
+	 					// echo $_SESSION['filename'].".<br>";
 
-            if(isset($_SESSION['path'][0])) {
-							echo "上傳完成後請輸入Email，我們將會寄出檢測結果。".".<br>".".<br>";
-              echo "Your Email: <input required='required' type='email' name='email' \\/>"." ";
-              echo "<input type='submit' name='submit' value='送出' >".".<br>";
+            if(isset($_SESSION['path'][0])) {?>
+
+			  <button type="button" class="btn" data-toggle="tooltip" data-placement="right" title="填寫Email，我們會把結果寄到你的信箱哦!">Email</button>
+              <input required='required' type='email' name='email'>
+              <input type='submit' name='submit' value='送出' class="btn btn-info" ><br>
+               <?php
             }
           ?>
         </form>
@@ -238,6 +227,11 @@ var limitUpload = function(){
         previewMaxHeight : 200
     });}
     limitUpload();
+</script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
 </script>
 </body>
 </html>
